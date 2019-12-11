@@ -26,6 +26,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-size: 0;
 }
 
 .site-navigation-item {
@@ -37,6 +38,8 @@ body {
 }
 
 .site-navigation a {
+    display: block;
+    font-size: 14px;
     text-decoration: none;
     line-height: 24px;
     text-transform: uppercase;
