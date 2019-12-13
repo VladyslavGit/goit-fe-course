@@ -40,6 +40,7 @@ body {
 }
 
 .site-navigation {
+    width: 478px;
     float: right;
     list-style: none;
     margin: 0;
@@ -60,10 +61,11 @@ body {
 }
 
 .site-navigation-item:not(:last-child) {
-    margin-right: 35px;
+    margin-right: 34px;
 }
 
-.features-title, .news-title {
+.features-title,
+.news-title {
     margin: 0;
     padding: 0;
     font-family: "Roboto", "Arial", sans-serif;
@@ -76,23 +78,17 @@ body {
     margin-bottom: 60px;
 }
 
-.features-title::after, .news-title::after {
+.features-title::after,
+.news-title::after {
     display: block;
     content: " ";
     width: 162px;
     height: 7px;
     background-color: #1abc9c;
     margin: 32px auto;
-    padding: 0;
 }
 
 .features-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.news-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -110,7 +106,8 @@ img {
     height: auto;
 }
 
-.features-list-item:not(:nth-child(4n)) {
+.features-list-item:not(:nth-child(4n)),
+.news-list-item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
 
@@ -118,7 +115,8 @@ img {
     margin-bottom: 30px;
 }
 
-.product-name, .product-price{
+.product-name,
+.product-price {
     margin: 0;
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 900;
@@ -148,133 +146,75 @@ img {
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus{
+.site-navigation a:focus {
     color: #1abc9c;
 }
 
-.product-name:hover,
-.product-name:focus{
+.features-list-item:hover .product-name,
+.features-list-item:focus .product-name{
     background-color: #1abc9c;
 }
 
-.product-price:hover,
-.product-price:focus{
+.features-list-item:hover .product-price,
+.features-list-item:focus .product-price{
     background-color: #7fd9c7;
-}
+} 
 
 .button:hover,
-.button:focus{
+.button:focus {
+    background-color: #1abc9c;
+}
+
+.news-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.news-list-item {
+    width: 350px;
+    float: left;
+}
+
+.news-list-title {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: #555252;
+}
+
+.news-list-title::after {
+    display: block;
+    content: " ";
+    width: 136px;
+    height: 4px;
     background-color: #4ec6ab;
+    margin: 14px 0;
 }
 
-/* .page-nav{
-    padding: 75px 0 100px 0;
-}
-
-.site-navigation {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 0;
-}
-
-.site-navigation-item {
-    display: inline-block;
-}
-
-.site-navigation-item:not(:last-child) {
-    margin-right: 60px;
-}
-
-.site-navigation a {
-    display: block;
+news-list-content {
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
-    text-decoration: none;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #626262;
-}
-
-.site-navigation a:hover, .button:hover,
-.site-navigation a:focus, .button:focus {
-    color: #9addfb;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.container {
-    width: 1110px;
-    margin: 0 auto;
-}
-
-.content-list {
-    list-style: none;
-    font-size: 0;
-    margin: 0;
-    padding: 0;
-}
-
-.content-item {
-    display: inline-block;
-    width: 420px;
-}
-
-.content-item:not(:nth-child(2n)) {
-    margin-right: 60px;
-}
-
-.content-item:nth-child(-n + 4) {
-    margin-bottom: 140px;
-}
-
-.section-image {
-    margin-bottom: 30px;
-}
-
-.section-image-title {
-    margin: 0;
-    margin-bottom: 30px;
-    font-size: 14px;
-    color: #b4ad9e;
-    font-family: "Ubuntu", "Arial", sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    line-height: 17px;
-}
-
-.article-title {
-    margin: 0;
-    margin-bottom: 40px;
-    font-size: 30px;
-    line-height: 36px;
-}
-
-.article-content {
-    margin: 0;
-    font-size: 14px;
-    line-height: 24px;
-}
-
-.section-button {
-    padding: 60px 0;
+    line-height: 26px;
+    margin-bottom: 14px;
 }
 
 .button {
-    display: block;
-    color: #626262;
-    font-size: 20px;
-    line-height: 24px;
-    border: 1px solid #626262;
-    background-color: #fff;
-    text-align: center;
-    padding: 10px 40px 10px 40px;
-    margin: 0 auto;
-} */
+    width: 160px;
+    height: 50px;
+    border: none;
+    background-color: #4ec6ab;
+    color: #ffffff;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-bottom: 46px;
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
