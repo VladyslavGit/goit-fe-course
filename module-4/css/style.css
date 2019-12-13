@@ -29,12 +29,14 @@ body {
     clear: both;
 }
 
-.page-header{
+.page-header {
     padding: 38px 0 0 0;
+    margin-bottom: 120px;
 }
 
-.site-logo{
+.site-logo {
     float: left;
+    padding: 6px, 0;
 }
 
 .site-navigation {
@@ -44,8 +46,8 @@ body {
     padding: 0;
 }
 
-.site-navigation-item{
-  float: left;  
+.site-navigation-item {
+    float: left;
 }
 
 .site-navigation-item a {
@@ -55,6 +57,33 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 11px;
+}
+
+.site-navigation-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.features-title, .news-title {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 48px;
+    line-height: 32px;
+    color: #515151;
+    margin-bottom: 60px;
+}
+
+.features-title::after, .news-title::after {
+    display: block;
+    content: " ";
+    width: 162px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin: 32px auto;
+    padding: 0;
 }
 
 .features-list {
@@ -69,13 +98,73 @@ body {
     padding: 0;
 }
 
-.features-list-item{
+.features-list-item {
     width: 255px;
     float: left;
+    margin-bottom: 110px;
 }
 
-.features-list-item:not(:last-child(4n)) {
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.features-list-item:not(:nth-child(4n)) {
     margin-right: 30px;
+}
+
+.features-list-item:nth-child(-n + 4) {
+    margin-bottom: 30px;
+}
+
+.product-name, .product-price{
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+
+.product-name {
+    padding: 6px 14px;
+    float: left;
+    text-align: left;
+    width: 201px;
+    height: 40px;
+    background-color: #323232;
+}
+
+.product-price {
+    padding: 5px 0;
+    float: right;
+    text-align: center;
+    width: 54px;
+    height: 40px;
+    background-color: #8c8c8c;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus{
+    color: #1abc9c;
+}
+
+.product-name:hover,
+.product-name:focus{
+    background-color: #1abc9c;
+}
+
+.product-price:hover,
+.product-price:focus{
+    background-color: #7fd9c7;
+}
+
+.button:hover,
+.button:focus{
+    background-color: #4ec6ab;
 }
 
 /* .page-nav{
