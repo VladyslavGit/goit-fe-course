@@ -104,7 +104,6 @@ body {
 
 .news-title {
     display: block;
-    margin-top: 110px;
 }
 
 .features-title::after,
@@ -188,6 +187,10 @@ img {
 .features-list-item:hover .product-price,
 .features-list-item:focus .product-price {
     background-color: #7fd9c7;
+}
+
+.features {
+    padding-bottom: 110px;
 }
 
 .news-list-link:hover,
