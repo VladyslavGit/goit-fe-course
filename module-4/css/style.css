@@ -36,7 +36,30 @@ body {
 
 .site-logo {
     float: left;
-    padding: 6px, 0;
+    text-decoration: none;
+}
+
+.first-letter {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 900;
+    color: #1abc9c;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.logo {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    color: #555252;
+    font-size: 30px;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.site-logo a {
+    display: block;
 }
 
 .site-navigation {
@@ -44,7 +67,7 @@ body {
     float: right;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 8px 0;
 }
 
 .site-navigation-item {
@@ -52,6 +75,7 @@ body {
 }
 
 .site-navigation-item a {
+    display: block;
     color: #0f0101;
     font-weight: 700;
     text-decoration: none;
@@ -78,6 +102,11 @@ body {
     margin-bottom: 60px;
 }
 
+.news-title {
+    display: block;
+    margin-top: 110px;
+}
+
 .features-title::after,
 .news-title::after {
     display: block;
@@ -85,7 +114,8 @@ body {
     width: 162px;
     height: 7px;
     background-color: #1abc9c;
-    margin: 32px auto;
+    margin: 0 auto;
+    margin-top: 32px;
 }
 
 .features-list {
@@ -151,24 +181,29 @@ img {
 }
 
 .features-list-item:hover .product-name,
-.features-list-item:focus .product-name{
+.features-list-item:focus .product-name {
     background-color: #1abc9c;
 }
 
 .features-list-item:hover .product-price,
-.features-list-item:focus .product-price{
+.features-list-item:focus .product-price {
     background-color: #7fd9c7;
-} 
+}
 
-.button:hover,
-.button:focus {
+.news-list-link:hover,
+.news-list-link:focus {
     background-color: #1abc9c;
 }
 
+.news-list-item:hover .news-list-link,
+.news-list-item:focus .news-list-link {
+    background-color: #1abc9c;
+}
 .news-list {
     list-style: none;
     margin: 0;
     padding: 0;
+
 }
 
 .news-list-item {
@@ -194,18 +229,26 @@ img {
     margin: 14px 0;
 }
 
-news-list-content {
+.news-list-content {
+    margin: 0;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 26px;
     margin-bottom: 14px;
 }
 
-.button {
+.news-list-link {
+    margin: 0;
     width: 160px;
     height: 50px;
     border: none;
     background-color: #4ec6ab;
+    margin-bottom: 46px;
+}
+
+.news-list-link-content {
+    display: block;
+    text-decoration: none;
     color: #ffffff;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 16px;
@@ -213,7 +256,8 @@ news-list-content {
     line-height: 26px;
     text-transform: capitalize;
     cursor: pointer;
-    margin-bottom: 46px;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .visually-hidden:not(:focus):not(:active),
