@@ -85,26 +85,27 @@ body {
     margin-right: 34px;
 }
 
-.slider{
+.slider-img{
+    position: relative;
+}
+
+.slider {
     min-height: 600px;
-    background-image: url("../img/slider.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-/* .slider-content{
-    position: relative;
-} */
 
-.slider-content{
+.slider-content {
+    position: absolute;
     min-height: 600px;
     width: 1110px;
     position: relative;
     margin: 0 auto;
 }
 
-.slider-ctrl{
+.slider-ctrl {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -118,23 +119,28 @@ body {
     cursor: pointer;
 }
 
-.slider-ctrl-prev{
-left:0;
-background-image: url(../icons/left.png);
-background-position: center;
-background-repeat: no-repeat;
-z-index: 3;
+.slider-ctrl:hover,
+.slider-crtl:focus {
+    opacity: 1;
 }
 
-.slider-ctrl-next{
-right: 0;
-background-image: url(../icons/right.png);
-background-position: center;
-background-repeat: no-repeat;
-z-index: 3;
+.slider-ctrl-prev {
+    left: 0;
+    background-image: url(../icons/left.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
 }
 
- /* .slider-content-title {
+.slider-ctrl-next {
+    right: 0;
+    background-image: url(../icons/right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+/* .slider-content-title {
     position: absolute;
     font-size: 60px;
     font-weight: 900;
@@ -148,9 +154,9 @@ z-index: 3;
     z-index: 3;
 }  */
 
-.new{
+.new {
     min-height: 676px;
-    background-color: #e9f0fd; 
+    background-color: #e9f0fd;
 }
 
 .container {
@@ -183,22 +189,35 @@ z-index: 3;
     margin-top: 32px;
 }
 
-.new-list{
+.new-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.new-list-item{
+.new-list-item {
     width: 255px;
     float: left;
     margin-bottom: 96px;
+    position: relative;
 }
 
 img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.overlay {
+    width: 255px;
+    height: 284px;
+    background-color: rgba(52, 53, 45, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    background-clip: padding-box;
+    display: none;
 }
 
 .new-list-item:not(:nth-child(4n)) {
@@ -234,6 +253,68 @@ img {
     background-color: #8c8c8c;
 }
 
+.overlay-list {
+    list-style: none;
+    margin: 0, auto;
+    padding-top: 90px;
+}
+
+ .overlay-list-item{
+     float: left;
+} 
+
+.overlay-list-item:nth-child(-n+3) {
+    margin-right: 10px;
+}
+
+.overlay-button{
+    color: rgb(255, 255, 255, 1);
+    border: 0;
+    width: 48px;
+    height: 48px;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255, 1);
+    border-style: solid;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(52, 53, 45, 0.5);
+    cursor: pointer;
+}
+
+.add{
+    background-image: url(../icons/icon4.png);
+    height: 48px;
+    width: 164px;
+    background-color: rgb(50, 50, 50);
+    background-position: left;
+    padding-left: 14px;
+}
+
+.like{
+    background-image: url(../icons/icon1.png);
+}
+
+.change{
+    background-image: url(../icons/icon2.png);
+}
+
+.time{
+    background-image: url(../icons/icon3.png);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #1abc9c;
+}
+
+.new-list-item:hover .overlay {
+    display: block;
+}
+
+ .overlay-button:hover .overlay-button{
+    background-color: rgba(26, 188, 156, 1);
+} 
+
 .new-list-item:hover .product-name,
 .new-list-item:focus .product-name {
     background-color: #1abc9c;
@@ -244,28 +325,28 @@ img {
     background-color: #7fd9c7;
 }
 
-.page-footer{
+.page-footer {
     position: relative;
     min-height: 88px;
     background-color: #323232;
 }
 
-.footer-title{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-font-size: 16px;
-line-height: 28px;
-color: #fefefe;
-margin: 0;
-padding: 0;
+.footer-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    line-height: 28px;
+    color: #fefefe;
+    margin: 0;
+    padding: 0;
 }
 
-.designer_brands{
-    color: #46bfa9;  
+.designer_brands {
+    color: #46bfa9;
     font-size: 16px;
-line-height: 28px;
+    line-height: 28px;
 }
 
 .visually-hidden:not(:focus):not(:active),
