@@ -25,11 +25,14 @@ body {
 }
 
 .page-header {
-    padding: 42px 0;
+    padding: 38px 0 32px 0;
     width: 1110px;
     margin: 0 auto;
-    margin-bottom: 38px;
 }
+
+.page-nav{
+    margin-bottom: 32px;
+} 
 
 .site-logo {
     float: left;
@@ -336,6 +339,8 @@ img {
     display: block;
 }
 
+
+
  .overlay-button:hover .overlay-button{
     background-color: rgba(26, 188, 156, 1);
 } 
@@ -366,6 +371,10 @@ img {
     color: #fefefe;
     margin: 0;
     padding: 0;
+}
+
+.footer-title a{
+    text-decoration: none;
 }
 
 .designer_brands {
