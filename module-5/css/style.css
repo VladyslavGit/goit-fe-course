@@ -321,6 +321,7 @@ img {
     height: 48px;
     width: 164px;
     background-position: 10px 10px;
+    background-color: rgb(50, 50, 50);
 }
 
 .add-title {
@@ -354,10 +355,6 @@ img {
     background-color: rgba(26, 188, 156);
 }
 
-.add:hover,
-.add:focus {
-    background-color: rgb(50, 50, 50);;
-} 
 .new-list-item:hover .product-name,
 .new-list-item:focus .product-name {
     background-color: #1abc9c;
