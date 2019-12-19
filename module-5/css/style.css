@@ -273,7 +273,6 @@ background-color: rgb(50, 50, 50);
     text-align: left;
     width: 201px;
     height: 40px;
-    background-color: #323232;
 }
 
 .product-price {
@@ -282,9 +281,15 @@ background-color: rgb(50, 50, 50);
     text-align: center;
     width: 54px;
     height: 40px;
-    background-color: #8c8c8c;
-    /* background-color: rgb(255, 255, 255);
-    opacity: 0.439; */
+    /* background-color: #8c8c8c; */
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.new-list-link{
+    width: 255px;
+    height: 40px;
+    display: block;
+    background-color: #323232;
 }
 
 .overlay-list {
