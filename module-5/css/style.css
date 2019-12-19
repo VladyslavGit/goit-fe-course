@@ -238,7 +238,6 @@ img {
 
 /* .new-list-image-title{
 background-color: rgb(50, 50, 50); 
-color: #fff
 } */
 
 .overlay {
@@ -320,7 +319,6 @@ color: #fff
     background-image: url(../icons/icon4.png);
     height: 48px;
     width: 164px;
-    background-color: rgb(50, 50, 50);
     background-position: 10px 10px;
 }
 
@@ -355,6 +353,10 @@ color: #fff
     background-color: rgba(26, 188, 156);
 }
 
+.add:hover,
+.add:focus {
+    background-color: rgb(50, 50, 50);;
+} 
 .new-list-item:hover .product-name,
 .new-list-item:focus .product-name {
     background-color: #1abc9c;
