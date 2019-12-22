@@ -6,17 +6,14 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: "Montserrat", "Arial", sans-serif;
     color: rgb(148, 225, 211);
-    /* font-size: 14px;
     background-color: #fff;
-    line-height: 26px;
-    letter-spacing: -0.02em; */
 }
 
 ul,
@@ -30,19 +27,19 @@ img {
     height: auto;
 }
 
-.container{
+.container {
     width: 1202px;
     margin: 0 auto;
 }
 
-.header-nav{
+.header-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-height: 50px;
 }
 
-.header-logo-link{
+.header-logo-link {
     text-decoration: none;
     font-size: 30px;
     display: block;
@@ -51,15 +48,15 @@ img {
     color: rgb(148, 225, 211);
 }
 
-.header-list{
+.header-list {
     display: flex;
     justify-content: space-between;
-    width: 492px; 
+    width: 492px;
     margin: 0;
     padding: 0;
 }
 
-.header-list-link{
+.header-list-link {
     text-transform: uppercase;
     font-weight: 400;
     text-decoration: none;
@@ -68,24 +65,130 @@ img {
     text-align: center;
 }
 
-.header-list-link:after{
+.header-list-link:after {
     content: '';
     width: 100%;
     height: 3px;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
     margin-top: 10px;
     background-color: rgb(243, 129, 129);
     visibility: hidden;
 }
 
-.header-list-link:hover ,
+.header-list-link:hover,
 .header-list-link:active {
     color: rgb(243, 129, 129);
 }
 
 .header-list-link:hover:after {
     visibility: visible;
+}
+
+.service {
+    padding-top: 126px;
+    color: #515151;
+}
+
+.service-title {
+    font-size: 30px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.service-title::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background-color: rgb(243, 129, 129);
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.service-title-span {
+    display: block;
+    font-family: "Kaushan Script", "Arial", cursive;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.service-title-span::first-letter {
+    text-transform: uppercase;
+}
+
+.service-list {
+    padding-top: 64px;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    min-height: 150px;
+    flex-wrap: wrap;
+}
+
+.service-list-item {
+    width: 352px;
+    position: relative;
+}
+
+.service-list-item::before {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 6px;
+}
+
+.service-list-item:first-child::before {
+    background-image: url("../icons/icon1.png");
+}
+.service-list-item:nth-child(2)::before {
+    background-image: url("../icons/icon2.png");
+}
+.service-list-item:nth-child(3)::before{
+    background-image: url("../icons/icon3.png");
+}   
+.service-list-item:nth-child(4)::before {
+    background-image: url("../icons/icon4.png");
+}
+.service-list-item:nth-child(5)::before{
+    background-image: url("../icons/icon5.png");
+}
+.service-list-item:last-child::before {
+    background-image: url("../icons/icon6.png");
+}
+
+ /* .service-list-item:nth-child(n+3){
+    padding-top: 90px;
+}   */
+
+.service-item-description {
+    width: 300px;
+    position: absolute;
+    right: 0;
+    padding-left: 6px;
+}
+
+.service-item-title {
+    font-size: 14px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.service-item-paragraf {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(153, 153, 153);
+    padding-top: 12px;
+
 }
 
 
