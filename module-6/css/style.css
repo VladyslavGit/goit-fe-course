@@ -292,24 +292,91 @@ img {
     box-shadow: 10px 10px 0 0 rgb(149, 225, 211);
 }
 
-.team-list li:hover .overlay {
-    opacity: 1;
-    visibility: visible;
-}
-
 .social-list-item,
 .overlay-container,
 .overlay {
     transition: 0.2s linear;
 }
 
+.team-list li:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
 .overlay-container {
     margin-bottom: 30px;
 }
 
-.team-section {
+.team {
     padding-bottom: 78px;
 }
+
+.footer {
+    border-top: 1px solid rgb(229, 229, 229);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-title {
+    font-family: "Monserrat", sans-serif;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+  }
+  
+  .author {
+    font-family: "Monserrat", sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(243, 129, 129);
+    text-decoration: none;
+  }
+  
+  .contact-form {
+    display: flex;
+    margin: 11px 0px;
+  }
+
+  .email {
+    height: 40px;
+    width: 230px;
+    border: 1px solid rgb(231, 231, 231);
+    border-right: none;
+  }
+  
+  .contact-btn {
+    font-family: "Monserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(149, 225, 211);
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+  }
+   
+  .email::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: rgb(204, 204, 204);
+    text-transform: capitalize;
+    padding-left: 10px;
+  }
+  
+  input[type="email"] {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-style: italic;
+    color: #333333;
+    text-transform: capitalize;
+    padding-left: 15px;
+  }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
