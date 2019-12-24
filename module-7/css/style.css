@@ -74,7 +74,7 @@ img {
 }
 
 .container {
-  width: 940px;
+  width: 58.75rem;
   margin: 0 auto;
 }
 
@@ -82,7 +82,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 44px;
+  padding-top: 2.75rem;
 }
 
 .nav-box {
@@ -91,16 +91,16 @@ img {
 
 .logo {
   display: block;
-  width: 79px;
-  height: 28px;
+  width: 4.9375rem;
+  height: 1.75rem;
   text-decoration: none;
-  margin-left: 8px;
+  margin-left: 0.5rem;
 }
 
 .header-list {
   display: flex;
   justify-content: space-between;
-  width: 484px;
+  width: 30.25rem;
   margin: 0;
   padding: 0;
 }
@@ -109,7 +109,7 @@ img {
   font-family: "Montserrat", "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #222222;
 }
 
@@ -119,21 +119,21 @@ img {
 }
 
 .services {
-  padding-top: 124px;
-  padding-bottom: 118px;
+  padding-top: 7.75rem;
+  padding-bottom: 7.375rem;
 } 
 
 .services-title,
 .contact_us-title {                  
   font-family: "Montserrat", sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1.2;
   font-weight: 700;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.025rem;
   color: #222222;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 
 .services-description,
@@ -141,11 +141,11 @@ img {
   display: block;
   font-family: "Noto Serif", serif;
   font-style: italic;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: #777777;
   text-align: center;
-  margin-bottom: 76px;
+  margin-bottom: 4.75rem;
 }
 
 .services-list {
@@ -159,16 +159,16 @@ img {
 }
 
 .services-list-item {
-  width: 274px;
+  width: 17.125rem;
 }
 
 .services-logo {
-  width: 72px;
-  height: 72px;
+  width: 4.5rem;
+  height: 4.5rem;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   border: 3px solid #fed136;
   border-radius: 50%;
 }
@@ -185,21 +185,21 @@ img {
 
 .services-item-title {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  letter-spacing: -0.025rem;
+  letter-spacing: -0.4px;
   color: #222222;
   text-transform: capitalize;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .service-item-description {
   font-family: "Roboto Slab", serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.35px;
+  letter-spacing: -0.0219rem;
   color: #777777;
   text-align: center;
 }
@@ -209,9 +209,9 @@ img {
   background-image: url(../img/img.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-position: right bottom 20px;
-  padding-top: 108px;
-  padding-bottom: 114px;
+  background-position: right bottom 1.25rem;
+  padding-top: 6.75rem;
+  padding-bottom: 7.125rem;
 }
 
 .contact_us-title{
@@ -221,56 +221,56 @@ img {
 .contact-form {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .contact-form-left-rows {
-  height: 210px;
+  height: 13.125rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .contact-form-input {
-  width: 456px;
-  height: 52px;
+  width: 28.5rem;
+  height: 3.25rem;
   border: 1px solid #cccccc;
   border-radius: 2px;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.2;
   font-weight: 700;
   color: #777777;
-  padding-left: 20px;
+  padding-left: 1.25rem;
 }
 
 .contact-form-textarea {
-  width: 456px;
-  height: 210px;
+  width: 28.5rem;
+  height: 13.125rem;
   border: 1px solid #cccccc;
   border-radius: 2px;
   resize: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.2;
   font-weight: 700;
   color: #777777;
-  padding-left: 20px;
-  padding-top: 18px;
+  padding-left: 1.25rem;
+  padding-top: 1.125rem;
 }
 
 .contact-form-input::placeholder,
 .contact-form-textarea::placeholder {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.2;
   font-weight: 700;
-  letter-spacing: -0.025rem;
+  letter-spacing: -0.4px;
   color: #bbbbbb;
   text-transform: uppercase;
 }
 
-/* .contact-form-input:required:focus:valid,
+ .contact-form-input:required:focus:valid,
 .contact-form-textarea:required:focus:valid {
   border: 1px solid #36d436;
   border-radius: 2px;
@@ -280,7 +280,7 @@ img {
 .contact-form-textarea:required:focus:invalid {
   border: 1px solid #d60f0f;
   border-radius: 2px;
-} */
+} 
 
 .contact-form-input:required:focus,
 .contact-form-textarea:required:focus
@@ -291,10 +291,10 @@ img {
 .contact-form-btn {
   display: block;
   margin: 0 auto;
-  width: 240px;
-  height: 66px;
+  width: 15rem;
+  height: 4.125rem;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.2;
   border: 0;
   border-radius: 3px;
@@ -309,9 +309,9 @@ img {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  margin: -0.0625rem;
   border: 0;
   padding: 0;
   white-space: nowrap;
