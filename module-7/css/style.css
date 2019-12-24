@@ -1,0 +1,242 @@
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v14-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-slab-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-slab-v10-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-slab-v10-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-serif-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Serif'), local('NotoSerif'),
+       url('../fonts/noto-serif-v8-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/noto-serif-v8-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-serif-italic - cyrillic_latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Noto Serif Italic'), local('NotoSerif-Italic'),
+       url('../fonts/noto-serif-v8-cyrillic_latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/noto-serif-v8-cyrillic_latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #222222;
+  background-color: #fff;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 44px;
+}
+
+.nav-box {
+  display: flex;
+}
+
+.logo {
+  display: block;
+  width: 79px;
+  height: 28px;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  width: 484px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-list-link {
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  color: #222222;
+}
+
+.header-list-link:hover,
+.header-list-link:focus {
+  color: #fed136;
+}
+
+
+/* SECTION SERVICES START */
+
+
+.services-heading,
+.contact_us-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  color: #222222;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+
+.after-heading {
+  display: block;
+  font-family: "Noto Serif", serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #777777;
+  text-align: center;
+  margin-bottom: 76px;
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list li {
+  width: 274px;
+}
+
+.service-item-hading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.025rem;
+  color: #222222;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.service-item-text {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.025rem;
+  color: #777777;
+  text-align: center;
+}
+
+.service-logo-comerce,
+.service-logo-web,
+.service-logo-security {
+  width: 72px;
+  height: 72px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.service-logo-comerce {
+  background-image: url(../icons/icon1.png);
+}
+.service-logo-web {
+  background-image: url(../icons/icon2.png);
+}
+.service-logo-security {
+  background-image: url(../icons/icon3.png);
+}
+
+.services {
+  padding-top: 124px;
+  padding-bottom: 118px;
+} 
+
+/* SERVICES SECTION END */
+
+.contact_us {
+  background-color: #222222;
+  background-image: url(../img/img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+
+
+.contact_us-heading{
+  color: #ffffff;
+  padding-top: 108px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
