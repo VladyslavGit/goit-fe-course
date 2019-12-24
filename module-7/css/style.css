@@ -270,7 +270,7 @@ img {
   text-transform: uppercase;
 }
 
-.contact-form-input:required:focus:valid,
+/* .contact-form-input:required:focus:valid,
 .contact-form-textarea:required:focus:valid {
   border: 1px solid #36d436;
   border-radius: 2px;
@@ -280,7 +280,7 @@ img {
 .contact-form-textarea:required:focus:invalid {
   border: 1px solid #d60f0f;
   border-radius: 2px;
-}
+} */
 
 .contact-form-input:required:focus,
 .contact-form-textarea:required:focus
