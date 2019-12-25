@@ -382,6 +382,35 @@ img {
     order: 4;}
 }
 
+@media (min-width: 940px) {
+  .container {
+    width: 940px;
+  }
+  .navigation {
+    align-items: center;
+  }
+  .banner {
+    height: 700px;
+    background-image: url(../img/bannerd.png);
+    padding-top: 222px;
+  }
+  .banner-content-title {
+    padding: 0px 170px;
+    margin-bottom: 34px;
+  }
+  .partners-list-item {
+    max-width: 220px;
+    margin: 0;
+    margin-bottom: 36px;
+  }
+  .partners-list {
+    width: 940px;
+  }
+  .partners {
+    padding-bottom: 72px;
+  }
+} 
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
