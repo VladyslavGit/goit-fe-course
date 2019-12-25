@@ -168,7 +168,7 @@ img {
   margin-bottom: 18px;
 }
 
-.section-link {
+.banner-link, .partners-link {
   display: block;
   margin: 0 auto;
   width: 282px;
@@ -185,8 +185,10 @@ img {
   text-decoration: none;
 }
 
-.section-link:hover,
-.section-link:focus {
+.banner-link:hover,
+.banner-link:focus,
+.partners-link:hover,
+.partners-link:focus {
   color: #ff4e50;
   background-color: #ffffff;
   border: 2px solid #ff4e50;
@@ -229,7 +231,7 @@ img {
   font-weight: 300;
 }
 
-.partners-list li {
+.partners-list-item {
   display: block;
   margin: 0 auto;
   max-width: 220px;
@@ -310,14 +312,75 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 } 
-/* 
-@media(min-width: 768px) {
+
+@media (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 670px;
+  }
+  .banner {
+    height: 700px;
+    background-image: url(../img/bannert.png);
+    padding-top: 222px;
+  }
+  .navigation {
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .header {
+    padding-top: 38px;
+  }
+  .banner-content-title {
+    font-size: 52px;
+    padding: 0px 80px;
+    margin-bottom: 34px;
+  }
+  .banner-content-description {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .header-buttons {
+    display: flex;
+  }
+  .mobile-screen {
+    display: none;
+  }
+  .large-screen {
+    display: block;
   }
   
+  .partners {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
 
-} */
+  .partners-title {
+    margin-bottom: 30px;
+  }
+  .partners-list {
+    width: 492px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .partners-list-item {
+    max-width: 235px;
+  }
+  .partners-list-item:nth-last-child(2n) {
+    margin-bottom: 56px;
+  }
+  .partners-list-item:nth-last-child(2n-1) {
+    margin-bottom: 36px;
+  }
+  .partners-list-item:first-child {
+    order: 1;}
+  .partners-list-item:nth-child(2) {
+    order: 3;}
+  .partners-list-item:nth-child(3) {
+    order: 2;}
+  .partners-list-item:last-child {
+    order: 4;}
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
