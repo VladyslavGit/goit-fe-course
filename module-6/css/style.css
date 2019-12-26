@@ -237,8 +237,6 @@ img {
 }
 
 .social-list-item {
-    width: 56px;
-    height: 56px;
     background-color: rgb(252, 227, 138);
     background-repeat: no-repeat;
     background-position: center;
@@ -262,6 +260,13 @@ img {
 
 .social-list-item:not(:last-child) {
     margin-right: 1px;
+}
+
+.social-list-link{
+    display: block;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
 }
 
 .name {
