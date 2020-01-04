@@ -73,11 +73,6 @@ img {
   height: auto;
 }
 
-.container {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .header {
   position: absolute;
   top: 0;
@@ -122,13 +117,6 @@ img {
   border-radius: 20px;
 }
 
-.navigation,
-.header-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .header-logo {
   display: block;
   text-align: center;
@@ -153,7 +141,6 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 15px;
 }
 
 .banner-content-description {
@@ -164,8 +151,6 @@ img {
   font-size: 18px;
   line-height: 1.2;
   font-weight: 300;
-  text-transform: lowercase;
-  margin-bottom: 18px;
 }
 
 .banner-link, .partners-link {
@@ -194,9 +179,6 @@ img {
   border: 2px solid #ff4e50;
 }
 
-.large-screen{
-  display: none;
-}
 
 .partners {
   padding-top: 68px;
@@ -322,31 +304,23 @@ img {
     background-image: url(../img/bannert.png);
     padding-top: 222px;
   }
-  .navigation {
-    justify-content: space-between;
-    align-items: baseline;
-  }
+
   .header {
     padding-top: 38px;
   }
   .banner-content-title {
     font-size: 52px;
     padding: 0px 80px;
-    margin-bottom: 34px;
   }
   .banner-content-description {
     font-size: 24px;
-    margin-bottom: 32px;
+    margin: 32px 0;
   }
-  .header-buttons {
-    display: flex;
-  }
-  .mobile-screen {
+
+  /* .mobile-screen {
     display: none;
-  }
-  .large-screen {
-    display: block;
-  }
+  } */
+
   
   .partners {
     padding-top: 70px;
@@ -386,17 +360,10 @@ img {
   .container {
     width: 940px;
   }
-  .navigation {
-    align-items: center;
-  }
   .banner {
     height: 700px;
     background-image: url(../img/bannerd.png);
     padding-top: 222px;
-  }
-  .banner-content-title {
-    padding: 0px 170px;
-    margin-bottom: 34px;
   }
   .partners-list-item {
     max-width: 220px;
