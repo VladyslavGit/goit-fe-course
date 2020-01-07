@@ -5,20 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home work № 6</title>
+    <title>Module-10</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header container">
         <nav class="header-nav">
             <a href="#" class="logo">MoGo</a>
-            <div>
+            <div class="header_nav-box">
                 <div class="nav-box">
                     <ul class="header-list">
                         <li class="header-list-item">
@@ -37,10 +33,18 @@
                             <a href="#" class="header-list-link">contact </a>
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <use href="#"></use>
-                    <use href="#"></use>
+                    <div class="header_icons">
+                        <button class="header_icons-btn">
+                            <svg class="icon-buy">
+                                <use href="./icon/sprite.svg#icon-buy"></use>
+                            </svg>
+                        </button>
+                        <button class="header_icons-btn">
+                            <svg class="icon-find">
+                                <use href="./icon/sprite.svg#icon-find"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -50,7 +54,7 @@
             <span class="banner-content-title">Creative Template</span>
             <h1 class="banner-content-title-welcome">
                 Welcome to MoGo</h1>
-            <button class="banner-link">Learn more</button>
+            <button class="banner-content-button">Learn more</button>
         </div>
     </section>
     <main>
@@ -105,24 +109,41 @@
             <ul class="team-list">
                 <li>
                     <div class="overlay-container">
-                        <img src="./img/team1.jpg" width="380" height="470" alt="team">
+                        <img srcset="./img/team1.jpg 380w, ./img/team1@2x.jpg 760w" sizes="380px" height="470"
+                            alt="team">
                         <div class="overlay">
                             <ul class="socials-list">
                                 <li class="social-list-item">
-                                    <a href="#" class="social-list-link"><span
-                                            class="visually-hidden">facebook</span></a>
+                                    <a href="#" class="social-list-link">
+                                        <svg class="social-list-icon">
+                                            <use href="./icon/sprite.svg#icon-facebook-logo">
+                                            </use>
+                                        </svg>
+                                        <span class="visually-hidden">facebook</span></a>
                                 </li>
                                 <li class="social-list-item">
-                                    <a href="#" class="social-list-link"><span
-                                            class="visually-hidden">twitter</span></a>
+                                    <a href="#" class="social-list-link">
+                                        <svg class="social-list-icon">
+                                            <use href="./icon/sprite.svg#icon-twitter">
+                                            </use>
+                                        </svg>
+                                        <span class="visually-hidden">twitter</span></a>
                                 </li>
                                 <li class="social-list-item">
-                                    <a href="#" class="social-list-link"><span
-                                            class="visually-hidden">pinterest</span></a>
+                                    <a href="#" class="social-list-link">
+                                        <svg class="social-list-icon">
+                                            <use href="./icon/sprite.svg#icon-pinterest">
+                                            </use>
+                                        </svg>
+                                        <span class="visually-hidden">pinterest</span></a>
                                 </li>
                                 <li class="social-list-item">
-                                    <a href="#" class="social-list-link"><span
-                                            class="visually-hidden">instagram</span></a>
+                                    <a href="#" class="social-list-link">
+                                        <svg class="social-list-icon">
+                                            <use href="./icon/sprite.svg#icon-instagram-logo">
+                                            </use>
+                                        </svg>
+                                        <span class="visually-hidden">instagram</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -133,24 +154,41 @@
                 </li>
                 <li>
                     <div class="overlay-container">
-                        <img src="./img/team2.jpg" width="380" height="470" alt="team">
+                        <img srcset="./img/team2.jpg 380w, ./img/team2@2x.jpg 760w" sizes="380px" height="470"
+                            alt="team">
                         <div class="overlay">
                             <ul class="socials-list">
                                 <li class="social-list-item">
-                                    <a href="#" class="social-list-link"><span
-                                            class="visually-hidden">facebook</span></a>
+                                    <a href="#" class="social-list-link">
+                                        <svg class="social-list-icon">
+                                            <use href="./icon/sprite.svg#icon-facebook-logo">
+                                            </use>
+                                        </svg>
+                                        <span class="visually-hidden">facebook</span></a>
                                 </li>
                                 <li class="social-list-item">
-                                    <a href="#" class="social-list-link"><span
-                                            class="visually-hidden">twitter</span></a>
+                                    <a href="#" class="social-list-link">
+                                        <svg class="social-list-icon">
+                                            <use href="./icon/sprite.svg#icon-twitter">
+                                            </use>
+                                        </svg>
+                                        <span class="visually-hidden">twitter</span></a>
                                 </li>
                                 <li class="social-list-item">
-                                    <a href="#" class="social-list-link"><span
-                                            class="visually-hidden">pinterest</span></a>
+                                    <a href="#" class="social-list-link">
+                                        <svg class="social-list-icon">
+                                            <use href="./icon/sprite.svg#icon-pinterest">
+                                            </use>
+                                        </svg>
+                                        <span class="visually-hidden">pinterest</span></a>
                                 </li>
                                 <li class="social-list-item">
-                                    <a href="#" class="social-list-link"><span
-                                            class="visually-hidden">instagram</span></a>
+                                    <a href="#" class="social-list-link">
+                                        <svg class="social-list-icon">
+                                            <use href="./icon/sprite.svg#icon-instagram-logo">
+                                            </use>
+                                        </svg>
+                                        <span class="visually-hidden">instagram</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -161,24 +199,41 @@
                 </li>
                 <li>
                     <div class="overlay-container">
-                        <img src="./img/team3.jpg" width="380" height="470" alt="team">
+                        <img srcset="./img/team3.jpg 380w, ./img/team3@2x.jpg 760w" sizes="380px" height="470"
+                            alt="team">
                         <div class="overlay">
                             <ul class="socials-list">
                                 <li class="social-list-item">
-                                    <a href="#" class="social-list-link"><span
-                                            class="visually-hidden">facebook</span></a>
+                                    <a href="#" class="social-list-link">
+                                        <svg class="social-list-icon">
+                                            <use href="./icon/sprite.svg#icon-facebook-logo">
+                                            </use>
+                                        </svg>
+                                        <span class="visually-hidden">facebook</span></a>
                                 </li>
                                 <li class="social-list-item">
-                                    <a href="#" class="social-list-link"><span
-                                            class="visually-hidden">twitter</span></a>
+                                    <a href="#" class="social-list-link">
+                                        <svg class="social-list-icon">
+                                            <use href="./icon/sprite.svg#icon-twitter">
+                                            </use>
+                                        </svg>
+                                        <span class="visually-hidden">twitter</span></a>
                                 </li>
                                 <li class="social-list-item">
-                                    <a href="#" class="social-list-link"><span
-                                            class="visually-hidden">pinterest</span></a>
+                                    <a href="#" class="social-list-link">
+                                        <svg class="social-list-icon">
+                                            <use href="./icon/sprite.svg#icon-pinterest">
+                                            </use>
+                                        </svg>
+                                        <span class="visually-hidden">pinterest</span></a>
                                 </li>
                                 <li class="social-list-item">
-                                    <a href="#" class="social-list-link"><span
-                                            class="visually-hidden">instagram</span></a>
+                                    <a href="#" class="social-list-link">
+                                        <svg class="social-list-icon">
+                                            <use href="./icon/sprite.svg#icon-instagram-logo">
+                                            </use>
+                                        </svg>
+                                        <span class="visually-hidden">instagram</span></a>
                                 </li>
                             </ul>
                         </div>
