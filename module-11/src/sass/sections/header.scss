@@ -1,0 +1,86 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-nav-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-icons {
+  width: 76px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-icons__btn {
+  border: none;
+  background-color: transparent;
+}
+
+.header-icons__icon-buy {
+  width: 18px;
+  height: 15px;
+  cursor: pointer;
+  fill: $white;
+  &:hover,
+  &:focus {
+    fill: $yellow;
+  }
+}
+
+.header-icons__icon-find {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  fill: $white;
+  &:hover,
+  &:focus {
+    fill: $yellow;
+  }
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 40px;
+}
+
+.nav-box-items {
+  display: flex;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+  font-weight: 700;
+  color: $white;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  width: 490px;
+  margin: 0;
+  padding: 0;
+  margin-right: 54px;
+}
+
+.header__list-link {
+  font-family: $Montserrat;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  color: $white;
+  &:hover,
+  &:focus {
+  color: $yellow;
+  padding-bottom: 10px;
+  border-bottom: 3px solid $yellow;
+  }
+}
