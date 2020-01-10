@@ -1,6 +1,6 @@
 .banner {
   min-height: 1000px;
-  background-image: linear-gradient(to top, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9)), url("../../images/banner.png");
+  background-image: linear-gradient(to top, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9)), url("../images/banner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,7 +8,7 @@
 
 @media (min-resolution: 192dpi) {
   .banner {
-    background-image: linear-gradient(to top, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9)), url("../../images/banner@2x.png");
+    background-image: linear-gradient(to top, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9)), url("../images/banner@2x.png");
   }
 }
 
